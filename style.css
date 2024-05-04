@@ -110,3 +110,39 @@ body{
     opacity: 1;
 }
 
+/* INICIO */
+
+/*.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}*/
+
+.inicio{
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    top: -150px;
+    position: relative;
+}
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 3px solid #ffffff;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
