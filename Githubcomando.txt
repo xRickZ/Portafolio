@@ -1,0 +1,4 @@
+git add ("compilar")
+git commit (guardar) 
+git log --oneline (historial)
+git reset --hard (regresar)
