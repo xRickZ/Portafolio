@@ -79,7 +79,7 @@ body{
     margin: 6% auto 0;
     width: 96%;
     height: auto;
-    background: linear-gradient(0deg, rgb(0, 0, 0), #000000);
+    background: linear-gradient(0deg, rgb(255, 255, 255), #000000);
 }
 .glow::before , .glow::after{
     content: "";
@@ -181,7 +181,6 @@ body{
     line-height: 50px;
     font-size: 27px;
     border-radius: 100%;
-    
 }
 
 .redes ul li a:hover{
@@ -200,3 +199,5 @@ body{
 .redes ul li .gmail:hover{
     background-color: #d61a1a;
 }
+
+
