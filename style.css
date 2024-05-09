@@ -79,7 +79,7 @@ body{
     margin: 6% auto 0;
     width: 96%;
     height: auto;
-    background: linear-gradient(0deg, rgb(255, 255, 255), #000000);
+    background: linear-gradient(0deg, rgb(61, 61, 61), #444444);
 }
 .glow::before , .glow::after{
     content: "";
@@ -121,25 +121,25 @@ body{
 
 .inicio{
     background-size: cover;
-    height: 100vh;
-    color: #fff;
+    height: 85vh;
+    color: #ffffff;
     display: flex;
     align-items: center;
 }
 
 .inicio .contenido-banner{
     padding: 20px;
-    max-width: 350px;
+    max-width: 450px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
-    top: -150px;
+    top: 20px;
     position: relative;
 }
 
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 3px solid #ffffff;
+    border: 5px solid #ffffff;
     display: block;
     width: 80%;
     margin: auto;
@@ -156,7 +156,7 @@ body{
     font-weight: normal;
 }
 
-/*REDES*/
+/*   ####    REDES     ####       */
 .redes{
     display: flex;
     align-items: center;
@@ -199,5 +199,35 @@ body{
 .redes ul li .gmail:hover{
     background-color: #d61a1a;
 }
+
+/*    ABOUTME     */
+
+.aboutme{
+    color: #ffffff; /*color letra*/
+    padding: 50px 20px;
+}
+
+.aboutme .contenido-seccion{
+    margin: auto;
+    max-width: 1100px;
+}
+
+.aboutme h2{
+    font-size: 48px;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.aboutme .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.aboutme .contenido-seccion p span{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
 
 
