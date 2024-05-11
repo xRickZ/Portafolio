@@ -79,7 +79,7 @@ body{
     margin: 6% auto 0;
     width: 96%;
     height: auto;
-    background: linear-gradient(0deg, rgb(61, 61, 61), #444444);
+    background: linear-gradient(0deg, rgb(117, 117, 117), #000000);
 }
 .glow::before , .glow::after{
     content: "";
@@ -222,21 +222,84 @@ body{
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
+    padding: 30px;
 }
 
 .aboutme .contenido-seccion p span{
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
-.aboutme .lightbar{
-    width: 1100px;
-    height: 5px;
+/* SOLO ESTO ES DEL NEON BLANCO*/
+.aboutme .contenido-seccion hr{
+    background-color: #ffffff;
+    height: 10px;
     border-radius: 10px;
-    background: #fff;
     z-index: 2;
     box-shadow: 0 0 10px #ffffff,
     0 0 20px #ffffff,
     0 0 40px #ffffff,
     0 0 80px #ffffff,
     0 0 120px #ffffff;
+}
+
+
+/* SECCION DE SKILLS*/
+
+.skills {
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills .contenido-seccion h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .contenido-seccion .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.contenido-seccion .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.contenido-seccion .box-container .box img{
+    height: 80px;
+}
+
+.contenido-seccion .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.contenido-seccion .box-container .box p{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.contenido-seccion .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+
 }
