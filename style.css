@@ -270,7 +270,7 @@ body{
 .contenido-seccion .box-container .box{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
-    background: #fff;
+    background: #444444;
     text-align: center;
     padding:30px 20px;
 }
@@ -280,13 +280,13 @@ body{
 }
 
 .contenido-seccion .box-container .box h3{
-    color:#444;
+    color:#ffffff;
     font-size: 22px;
     padding:10px 0;
 }
 
 .contenido-seccion .box-container .box p{
-    color:#777;
+    color:#ffffff;
     font-size: 15px;
     line-height: 1.8;
 }
@@ -301,5 +301,208 @@ body{
         padding:20px;
     }
 }
+/*       PROYECTOS       */
 
+.proyectos{
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.proyectos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.proyectos h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.proyectos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proyectos .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.proyectos .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+
+.proyectos .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.proyectos .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.proyectos .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+
+.proyectos .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+/*    CONTACTO      */
+
+.contacto{
+    color: #fff;
+    padding: 50px;
+}
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila{
+    display: flex;
+}
+
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .col img{
+    width: 100%;
+}
+
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-swidth: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contacto .col .info ul{
+    list-style: none;
+}
+
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*  FOOTER    */
+
+footer{
+    background-color: #444444;
+    color: #fff;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
 }
