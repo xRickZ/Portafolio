@@ -9,7 +9,12 @@
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
+    scrollbar-color: #ffffff8f #0000008f;
+    scrollbar-width: thin;
+
 }
+
+
 
 body{
     background-image: linear-gradient(rgb(47, 79, 79), rgb(167, 167, 167), rgb(47, 79, 79));
@@ -20,7 +25,6 @@ body{
 }
 
 /* MENU */
-/* Cambiar el color del menu*/
 .contenedor-header{
     background: rgba(0, 0, 0, 0);
     backdrop-filter: blur(0.4rem);
@@ -299,6 +303,25 @@ body{
     padding: 20px 0;
 }
 
+.skills .contenido-seccion h4{
+    font-size: 28px;
+    padding: 20px 0;
+}
+
+.skills .contenido-seccion hr{
+    background-color: #ffffff;
+    height: 10px;
+    width: 20%;
+    border: #fff;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 40px #ffffff,
+    0 0 80px #ffffff,
+    0 0 120px #ffffff;
+}
+
 .skills .contenido-seccion .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -308,9 +331,9 @@ body{
 .contenido-seccion .box-container .box{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
-    background: #444444;
+    background: #bdbdbd8f;
     text-align: center;
-    padding:30px 20px;
+    padding:10px 0px;
 }
 
 .contenido-seccion .box-container .box img{
@@ -375,6 +398,11 @@ body{
     width: 100%;
     display: block;
 }
+.proyectos .galeria .proyecto .overlay img{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
 
 .proyectos .galeria .proyecto .overlay{
     position: absolute;
@@ -384,6 +412,7 @@ body{
     text-align: center;
     background: linear-gradient(rgba(189, 189, 189, 0.561), rgba(189, 189, 189, 0.561));
     display: flex;
+    border: rgba(189, 189, 189, 0.561) 5px solid;
     flex-direction: column;
     justify-content: center;
     transition: 1s;
@@ -422,16 +451,6 @@ footer{
     text-align: center;
 }
 
-footer .redes{
-    margin-bottom: 10px;
-}
-
-footer .redes h1{
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-}
-
 footer .arriba{
     display: block;
     width: 50px;
@@ -445,4 +464,92 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+
+
+/*     CABEZA ANIMADA     */
+footer .cabeza{
+    right: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #bdbdbd8f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+footer .cabeza .boca{
+    position: absolute;
+    bottom: 25%;
+    width: 56px;
+    height: 5px;
+    background-color: #d4d4d4;
+    border-radius: 4px 4px 4px 4px;
+    animation: move 6s infinite;
+}
+
+footer .ojos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.5s;
+    animation: move 6s infinite;
+}
+
+footer .ojo{
+    width: 25px;
+    height: 25px;
+    background-color: #d4d4d4;
+    border-radius: 25px 25px 25px 25px;
+    animation: blink 6s infinite;
+}
+
+@keyframes move{
+    40%{
+        transform: translate(10px,-30px);
+    }
+    60%{
+        transform: translate(20px,0px);
+    }
+    80%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes blink{
+    0%{
+        height: 35px ;
+        width: 35px;
+    }
+    15%{
+        height: 35px;
+        width: 35px;
+    }
+    20%{
+        height: 35px;
+        width: 35px;
+    }
+    60%{
+        height: 35px;
+        width: 35px;
+    }
+    70%{
+        height: 35px;
+        width: 25px;
+    }
+    80%{
+        height: 10px;
+        width: 35px;
+    }
+    90%{
+        height: 10px;
+        width: 35px;
+    }
+    100%{
+        height: 35px;
+        width: 35px;
+    }
 }

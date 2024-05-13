@@ -5,4 +5,5 @@ git reset --hard (regresar)
 
         <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
         <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-regular fa-envelope"></i></a>   
+        <a href="#"><i class="fa-regular fa-envelope"></i></a> 
+
