@@ -12,7 +12,8 @@ html{
 }
 
 body{
-    background-color: #000;
+    background-image: linear-gradient(rgb(47, 79, 79), rgb(167, 167, 167), rgb(47, 79, 79));
+    background-attachment:fixed; 
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -37,6 +38,10 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 15px 10px;
+}
+
+.contenedor-header header .logo img{
+    width: 80px;
 }
 
 .contenedor-header header .logo a{
@@ -73,7 +78,7 @@ body{
     display: none;
 }*/
 
-/*Para el fondo de colores*/
+/*  FONDO CON RGB !!!!   
 .block{
     position: relative;
     margin: 6% auto 0;
@@ -105,12 +110,16 @@ body{
         background-position: 0 0;
     }
 }
+
 .glow::after{
     filter: blur(40px);
     opacity: 1;
-}
+}*/
 
-/* INICIO */
+
+
+
+/*      INICIO        */
 
 /*.contenedor-header header .logo a{
     font-family: 'Righteous';
@@ -198,6 +207,35 @@ body{
 
 .redes ul li .gmail:hover{
     background-color: #d61a1a;
+}
+
+.inicio button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.inicio button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #bdbdbd8f;
+    z-index: -1;
+    transition: 1s;
+}
+
+.inicio button:hover .overlay{
+    width: 100%;
 }
 
 /*    ABOUTME     */
@@ -344,7 +382,7 @@ body{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(rgba(189, 189, 189, 0.561), rgba(189, 189, 189, 0.561));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -367,136 +405,38 @@ body{
     margin-bottom: 0px;
 }
 
-/*    CONTACTO      */
-
-.contacto{
-    color: #fff;
-    padding: 50px;
-}
-
-.contacto .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-
-.contacto h2{
-    font-size: 48px;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.contacto .fila{
-    display: flex;
-}
-
-.contacto .col{
-    width: 50%;
-    padding: 10px;
-    position: relative;
-}
-
-.contacto .col input, .contacto .col textarea{
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
-    font-size: 18px;
-}
-
-.contacto button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid #fff;
-    width: fit-content;
-    display: block;
-    margin: 20px auto;
-    padding: 10px 22px;
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    z-index: 10;
-}
-
-.contacto button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #1CB698;
-    z-index: -1;
-    transition: 1s;
-}
-
-.contacto button:hover .overlay{
-    width: 100%;
-}
-
-.contacto .col img{
-    width: 100%;
-}
-
-.contacto .col .info{
-    position: absolute;
-    top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.contacto .col .info ul{
-    list-style: none;
-}
-
-.contacto .col .info ul li{
-    margin-bottom: 20px;
-}
-
-.contacto .col .info ul li i{
-    color: #1CB698;
-    display: inline-block;
-    margin-right: 20px;
-}
-
 /*  FOOTER    */
 
 footer{
-    background-color: #444444;
-    color: #fff;
-    padding: 30px 0 30px 0;
-    text-align: center;
     position: relative;
     width: 100%;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px 0px;
+    background-color: #33333353;
+    border-top: 1px solid rgba(255, 255, 255, 0.381);
+    backdrop-filter: blur(30px);
+    align-items: center;
+    text-align: center;
 }
 
 footer .redes{
     margin-bottom: 10px;
 }
 
-footer .redes a{
+footer .redes h1{
     color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    text-align: center;
 }
 
 footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
+    background-color: #bdbdbd8f;
     color: #fff;
     position: absolute;
     left: 50%;
