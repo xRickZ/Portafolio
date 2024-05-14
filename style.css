@@ -213,7 +213,7 @@ body{
     background-color: #d61a1a;
 }
 
-.inicio button{
+.inicio .boton-descarga {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -227,7 +227,13 @@ body{
     z-index: 10;
 }
 
-.inicio button .overlay{
+.inicio .boton-descarga a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.inicio .boton-descarga .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -238,7 +244,7 @@ body{
     transition: 1s;
 }
 
-.inicio button:hover .overlay{
+.inicio .boton-descarga:hover .overlay{
     width: 100%;
 }
 
@@ -424,6 +430,12 @@ body{
 .proyectos .galeria .proyecto .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
+}
+
+.proyectos .galeria .proyecto .overlay a{
+    margin-bottom: 20px;
+    transition: 1s;
+    color: #fff;
 }
 
 .proyectos .galeria .proyecto .overlay:hover{
