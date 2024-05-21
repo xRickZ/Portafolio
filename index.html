@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
@@ -22,8 +23,8 @@
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#aboutme" onclick="seleccionar()">ABOUT ME</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,12 +42,16 @@
                         <a download="CV_Ricardo_Vargas" href="CV_Ricardo.pdf">Descargar CV </a>
                          <i class="fa-solid fa-download"></i>
                         <span class="overlay"></span>
-                    </button>
+                    </button>                                     
+                    <div class="correo-copiar">
+                        <span id="url">ricardo.ismael.2000@gmail.com</span> 
+                        <i id="botonCopiar" onclick="copiarUrl()" class="fa-regular fa-copy"></i>
+                        
+                    </div>
                 <div class="redes">
                     <ul>
                         <li><a href="https://www.linkedin.com/in/ricardo-vargas-araya-292921285/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
                         <li><a href="https://github.com/xRickZ" class="github"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="#" class="gmail"><i class="fa-regular fa-envelope"></i></a> </li>
                     </ul>
                 </div>
             </div>
@@ -57,20 +62,54 @@
             <div class="contenido-seccion">
                 <h2>About me</h2>
                 <hr>
-                <p><span>Hola soy Ricardo✌️</span>, soy un estudiante en practica apasaionado por el desarrollo web,
+                <p><span>Hola, soy Ricardo✌️</span>, soy un estudiante en práctica apasionado por el desarrollo web, 
                     disfruto poniendo en práctica mis conocimientos para afrontar desafíos y encontrar soluciones innovadoras. 
                     Siempre estoy abierto a aprender más y expandir mis habilidades.</p>
-                    <h2>Actualmente</h2>
-                    <hr>
-                <p>Ahora mismo estoy termianndo mi carrera para obtener mi titulo
-                    y tambien estoy aprendiendo React y Bun para expandir mis conocimientos. </p>
-                    <h2>Experiencia</h2>
-                    <hr>
-                <p>Experiencia laboral dentro del rubro no tengo ya que estoy cursando mi carrera actualmente.</p>
+                <h2>Actualmente</h2>
+                <hr>
+                <p>Ahora mismo estoy terminando mi carrera para obtener mi título 
+                    y también estoy aprendiendo React, Node.js y Bun para expandir mis conocimientos.</p>
+                <h2>Experiencia</h2>
+                <hr>
+                <p>Experiencia laboral dentro del rubro no tengo ya que estoy cursando mi carrera actualmente, pero espero en un futuro 
+                    poder desempeñarme dentro de una compañía.</p>
                     
-                <p>Experiencia en proyectos tengo, ya que he desarrollado y trabajado tanto como paginas webs, softwares 
-                    y apliaciones moviles pero desafortunadamente por tener poco conocimiento en el tema los perdi 
-                    en el trayecto de mi carrera.</p>
+            </div>
+        </section>
+
+        <!--PROYECTOS-->
+        <section id="proyectos" class="proyectos">
+            <div class="contenido-seccion">
+                <h2>Proyectos</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="img/LogoProyecto1.png" alt="">
+                        <div class="overlay">
+                            <h3>Software</h3>
+                            <p>Mantenimiento y compra de productos de bicicletas.</p>
+                            <a href="https://github.com/B0z3r/TeryxRepo" >Ver repositorio</a> 
+                                <div class="contendor-de-logos">
+                                    <img src="img/htmlLogo.png" alt="">
+                                    <img src="img/cssLogo.png" alt="">
+                                    <img src="img/pythonLogo.png" alt="">
+                                    <img src="img/JSlogo.png" alt="">
+                                    <img src="img/githubLogo.png" alt="">
+                                    <img src="img/awsLogo.png" alt="">
+                                </div>
+            
+                        </div>
+                    </div>
+
+                    <div class="proyecto">
+                        <img src="img/SinProyecto.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Futuro proyecto</h3>
+                            <p>El destino lo sabra</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
             </div>
         </section>
 
@@ -169,52 +208,16 @@
 
         </section>
 
-        <!--PROYECTOS-->
-        <section id="proyectos" class="proyectos">
-            <div class="contenido-seccion">
-                <h2>Proyectos</h2>
-                <div class="galeria">
-                    <div class="proyecto">
-                        <img src="img/LogoProyecto1.png" alt="">
-                        <div class="overlay">
-                            <h3>Software</h3>
-                            <p>Mantenimiento y compra de productos de bicicletas.</p>
-                            <a href="https://github.com/B0z3r/TeryxRepo" >Ver repositorio</a> 
-                                <div class="contendor-de-logos">
-                                    <img src="img/htmlLogo.png" alt="">
-                                    <img src="img/cssLogo.png" alt="">
-                                    <img src="img/pythonLogo.png" alt="">
-                                    <img src="img/JSlogo.png" alt="">
-                                    <img src="img/githubLogo.png" alt="">
-                                    <img src="img/awsLogo.png" alt="">
-                                </div>
-            
-                        </div>
-                    </div>
-
-                    <div class="proyecto">
-                        <img src="img/SinProyecto.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Futuro proyecto</h3>
-                            <p>El destino lo sabra</p>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-        </section>
-
-
         <!--FOOTER-->
         <footer>
             <a href="#inicio" class="arriba">
                 <i class="fa-solid fa-angles-up"></i>
             </a>
             <div class="footer-content">
-                <p>Hecho con ❤️ por mi Rick 🤙</p>
+                <p>Hecho con ❤️ por mi, Rick 🤙</p>
             </div>
         </footer>
 
+    <script src="scripts.js"></script>
 </body>
 </html>

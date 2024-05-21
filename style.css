@@ -11,10 +11,7 @@ html{
     scroll-behavior: smooth;
     scrollbar-color: #ffffff8f #0000008f;
     scrollbar-width: thin;
-
 }
-
-
 
 body{
     background-image: linear-gradient(rgb(47, 79, 79), rgb(167, 167, 167), rgb(47, 79, 79));
@@ -41,7 +38,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10px;
+    padding: 10px 5px;
 }
 
 .contenedor-header header .logo img{
@@ -118,7 +115,7 @@ body{
 }
 
 .inicio .contenido-banner h2{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: normal;
 }
 
@@ -156,15 +153,23 @@ body{
 
 .redes ul li .linkedin:hover{
     background-color: #0e76a8;
+    box-shadow: 0 0 10px #0e76a8,
+    0 0 20px #0e76a8,
+    0 0 40px #0e76a8,
+    0 0 80px #0e76a8,
+    0 0 120px #0e76a8;
 }
 
 .redes ul li .github:hover{
     background-color: #171515;
+    box-shadow: 0 0 10px #171515,
+    0 0 20px #171515,
+    0 0 40px #171515,
+    0 0 80px #171515,
+    0 0 120px #171515;
 }
 
-.redes ul li .gmail:hover{
-    background-color: #d61a1a;
-}
+
 
 .inicio .boton-descarga {
     cursor: pointer;
@@ -201,6 +206,28 @@ body{
     width: 100%;
 }
 
+.inicio .correo-copiar{
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 15px auto;
+    padding: 5px 17px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.inicio .correo-copiar i{
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    border: transparent;
+    font-size: 18px;
+}
+
+
 /*    ABOUTME     */
 
 .aboutme{
@@ -233,6 +260,7 @@ body{
 /* SOLO ESTO ES DEL NEON BLANCO*/
 .aboutme .contenido-seccion hr{
     background-color: #ffffff;
+    border: #fff;
     height: 10px;
     border-radius: 10px;
     z-index: 2;
